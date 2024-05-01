@@ -1,12 +1,9 @@
-var lastScrollTop = 0;
-        navbar = document.getElementById("navbar");
-        window.addEventListener("scroll", function(){
-        var scrollTop = window.pageYOffset || document
-            .documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
-            navbar.style.top="-49px";
-        } else {
-            navbar.style.top="0";
-        }
-            lastScrollTop = scrollTop;
-        })
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
