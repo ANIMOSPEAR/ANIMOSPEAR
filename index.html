@@ -1,55 +1,38 @@
-<!DOCTYPE html> <!--This is the acting homepage-->
+<!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <title>Testing Website!</title>
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="navigationbar/navbar.css">
-    <script src="navigationbar/navbar.js"></script>
 <head>
-    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="navigationbar/navbar.css">
+
+
 </head>
 <body>
-    <div class="page-content">
 
-    <!--Navigation bar (I have no idea how any of this works)-->
-    <nav class="navbar" id="main_navbar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
-        <a href="#">Home</a>
-        <a href="#">About SPEAR</a>
-        <a href="#">Events & Competitions</a>
-        <a href="#">Officers</a>
-        <a href="#">Contacts</a>
-    </nav>
-        <button class="openbtn" onclick="openNav()">☰</button>
-        
-        <script>
-            function openNav() {
-              document.getElementById("mySidebar").style.width = "250px";
-              document.getElementById("main").style.marginLeft = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidebar").style.width = "0";
-              document.getElementById("main").style.marginLeft= "0";
-            }
-            </script>
-    
-    <!--end of Navigation bar-->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About SPEAR</a>
+  <a href="#">Events & Competitions</a>
+  <a href="#">Officers</a>
+  <a href="#">Contact Us!</a>
+</div>
 
-    <div class="heading">
-    <h1>Hello World</h1>
-    <p>testing by aurelia</p>
-    </div>
-    <div class="about-content">
-        <h2>Animo Animo Animo SPEAR</h2>
-        <P> lorem ipsum
-        </P>
-        <p>
-            lorem ipsum
-        </p>
-        </div>
-    </div>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  <h2>Collapsed Sidebar</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
 </body>
-    <script src="homepage.js"></script>
-</html>
+</html> 
