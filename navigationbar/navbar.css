@@ -22,9 +22,13 @@ transition: background-color 0.3s;
 }
 
 .nav-link:hover {
-background-color: #52f7838e;
+  transform: scale(1.2);
 }
 
 .nav-link.active {
   background-color: #d7dbdb88;
-  }
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
