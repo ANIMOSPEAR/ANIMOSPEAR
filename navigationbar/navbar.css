@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #883d18;
+  background-color: #40b01a9e;
   z-index: 1000;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
 }
@@ -22,5 +22,9 @@ transition: background-color 0.3s;
 }
 
 .nav-link:hover {
-background-color: #bd6336;
+background-color: #52f7838e;
 }
+
+.nav-link.active {
+  background-color: #d7dbdb88;
+  }
