@@ -1,27 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--This is the acting homepage-->
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="navigationbar/navbar.css">
-<script src="navigationbar/navbar.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Testing Website!</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="navigationbar/navbar.css">
 
 </head>
 <body>
+    
+    <div class="page-content">
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About SPEAR</a>
-  <a href="#">Events & Competitions</a>
-  <a href="#">Officers</a>
-  <a href="#">Contact Us!</a>
-</div>
+    <!--Navigation bar (I have no idea how any of this works)-->
+    <nav class="navbar" id="main_navbar"> 
+        <a href="#Home">Home</a>
+        <a href="#About SPEAR">About SPEAR</a>
+        <a href="#Events & Competitions">Events & Competitions</a>
+        <a href="#Officers">Officers</a>
+        <a href="#Contacts">Contacts</a>
+    </nav>
+    
+    <script src="navigationbar/navbar.js"></script>
+    <!--end of Navigation bar-->
 
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰</button>  
-</div>
-
-
-   
+    <div class="heading">
+    <h1>Hello World</h1>
+    <p>testing by aurelia</p>
+    </div>
+    <div class="about-content">
+        <h2>Animo Animo Animo SPEAR</h2>
+        <P> lorem ipsum
+        </P>
+        <p>
+            lorem ipsum
+        </p>
+        </div>
+    </div>
 </body>
-</html> 
+    <script src="homepage.js"></script>
+</html>
