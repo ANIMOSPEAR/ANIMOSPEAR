@@ -1,4 +1,8 @@
-.navbar {
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
   height: 100%;
   width: 0;
   position: fixed;
@@ -11,7 +15,7 @@
   padding-top: 60px;
 }
 
-.navbar a {
+.sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -20,11 +24,11 @@
   transition: 0.3s;
 }
 
-.navbar a:hover {
+.sidebar a:hover {
   color: #f1f1f1;
 }
 
-.navbar .closebtn {
+.sidebar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -45,8 +49,13 @@
   background-color: #444;
 }
 
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .navbar {padding-top: 15px;}
-  .navbar a {font-size: 18px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
