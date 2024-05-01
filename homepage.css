@@ -9,15 +9,6 @@ body{
     opacity: 0;
     transition: opacity 0.5s ease-in-out; 
 }
-.heading {
-    width:90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin: 15px auto;
-}
 
 .heading h1 {
     font-size: 90px;
