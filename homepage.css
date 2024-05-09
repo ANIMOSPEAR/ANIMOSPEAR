@@ -29,6 +29,18 @@ body{
     background-color: brown;
 }
 
+.heading h2 {
+    font-size: 90px;
+    color: #9B4819;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    position:relative;
+    font-family: Cormorant;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+}
+
 .heading p {
    font-size: 23px;  
    color: maroon;
